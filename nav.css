@@ -8,51 +8,55 @@ body{
     font-family: lato, sans-serif;
     font-weight: 700;
     font-style: normal;
+    text-align:center;
 }
 #navBar{
-    padding-top: 1%;
-    display:flex;
-    flex-flow: row;
-    flex-basis:1%;
-    justify-content: space-between;
-    padding-bottom:1%;
-    background-color:grey;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
     width: 100%;
+    padding-bottom: 1%;
+    border-bottom: 3px solid #e9e6e6;
     
 }
-@media(max-width: 400px){
-    nav{
-        justify-content: space-evenly;
-
-    }
-    #navBarLeft{
-        font-size:48%;
-        text-align: center;
-    }
+.fullScreenLinks{
+    display: block;
 }
-@media(max-width:800px) and (min-width:401px){
-    nav{
-        justify-content: space-evenly;
-    }
-    #navBarLeft{
-        font-size:53%;
-        text-align: center;
-    }
-
-}
-#navBarLeft{
-    padding-left: 1%;
-    width:50%;
-}
-.navButton:link, .navButton:visited{
-    color:white;
+#links{
+    padding-left: 2%;
+    width:100%;
+    display: none;
+    background-color:#e9e6e6; 
+    text-align: left;
+    font-family: lato, sans-serif;
+    font-weight: 200;
+    font-style: normal;
     text-decoration: none;
 }
-.navButton:hover{
-    color:white;
+#links a{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#links a:link, #links a:visited{
+    color: black;
     text-decoration: none;
 }
-.navButton{
+#navBar a.icon{
+    display: none;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+#navBar a:link, #navBar a:visited{
+    width:fit-content;
+    color:black;
+    text-decoration: none;
+}
+#navBar a:hover{
+    color:black;
+    text-decoration: none;
+}
+#navBar a{
     font-size: 150%;
     overflow-wrap:break-word;
     width: 6%;
@@ -62,3 +66,16 @@ body{
     padding-right:0.5%;
     padding-left:0.5%;
 }
+
+@media screen and (max-width: 600px){
+
+    .fullScreenLinks{
+        display:none;
+    }
+    #navBar a.icon{
+        display: block;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+

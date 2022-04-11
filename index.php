@@ -3,7 +3,7 @@
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Home</title>
-            <link rel="stylesheet" href="indexStyle.css">
+            <link rel="stylesheet" href="style.css">
         </head>
         <body>
             <div id="indexContent"> 
@@ -13,10 +13,10 @@
             </div>
             <section id="about"> 
                 <?php include 'header.php'?>
-                <p class="homeTitle">ABOUT</p>
+                <p class="homeTitle">All About Me</p>
             </section>
             <section id="portfolio">
-                <h1 class="homeTitle">PORTFOLIO</h1>
+                <h1 class="homeTitle">My Portofolio</h1>
                 <div id="iamtom">
 
                 </div>
